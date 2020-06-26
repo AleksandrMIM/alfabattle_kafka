@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  kafka:
+    container_name: kafka
+    image:
+    ports:
+      -
+    environment:
+      -
+  alfabattle-kafka:
+    container_name: alfabattle-kafka
+    depends_on:
+      - elastic
+    image: aminetor/alfabattle_kafka:1.0-SNAPSHOT
+    ports:
+      - 9111:9111
