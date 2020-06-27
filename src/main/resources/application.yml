@@ -1,5 +1,5 @@
 server:
-  port: 9099
+  port: 9122
   servlet:
     encoding:
       charset: UTF-8
@@ -11,3 +11,22 @@ spring:
     default-property-inclusion: non_null
     serialization:
       write_dates_as_timestamps: false
+
+kafka:
+  topic: article
+  consumer:
+    url: localhost:9092
+    group-id: group-id
+  producer:
+    url: localhost:9092
+#  kafka:
+#    consumer:
+#      bootstrap-servers: localhost:9092
+#      group-id: group-id
+#      auto-offset-reset: earliest
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    producer:
+#      bootstrap-servers: localhost:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-serializer: org.apache.kafka.common.serialization.StringDeserializer

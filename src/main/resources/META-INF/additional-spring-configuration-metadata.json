@@ -1,4 +1,19 @@
 {
   "properties": [
-
-] }
+    {
+      "name": "kafka.producer.url",
+      "type": "java.lang.String",
+      "description": "Description for kafka.producer.url."
+    },
+    {
+      "name": "kafka.consumer.url",
+      "type": "java.lang.String",
+      "description": "Description for kafka.consumer.url."
+    },
+    {
+      "name": "kafka.consumer.group-id",
+      "type": "java.lang.String",
+      "description": "Description for kafka.consumer.group-id."
+    }
+  ]
+}

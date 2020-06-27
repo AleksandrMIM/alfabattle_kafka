@@ -13,4 +13,4 @@ services:
       - elastic
     image: aminetor/alfabattle_kafka:1.0-SNAPSHOT
     ports:
-      - 9111:9111
+      - 9122:9122
